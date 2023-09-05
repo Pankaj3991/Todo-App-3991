@@ -4,7 +4,9 @@ import Connection from "./database/db.js"
 import cors from "cors";
 import mongoose from "mongoose";
 
-dotenv.config();
+dotenv.config({
+    path: "./.env",
+});
 Connection();
 
 
